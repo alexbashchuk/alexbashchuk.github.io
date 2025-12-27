@@ -198,7 +198,7 @@ export default function Home() {
 
       I led the migration of API testing from SoapUI and Postman into reusable Tosca API modules, standardized Salesforce LWC automation, and authored a custom Java-based Terraform automation tool to accelerate environment reconfiguration through .tf.json files.
 
-      To support CI/CD maturity, I integrated Tosca execution into Jenkins pipelines, implementing advanced log parsing using a custom Java ANTLR-based application. 
+      To support CI/CD maturity, I integrated Tosca execution into Jenkins pipelines, implementing advanced log parsing from Splunk, using a custom Java ANTLR-based application. 
 
       I also supervised a distributed team of five outsourced QA engineers, enforcing enterprise automation standards and review processes.
       `
