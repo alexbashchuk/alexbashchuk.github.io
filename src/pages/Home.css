@@ -1,0 +1,274 @@
+:root{
+  --bg: #0b1220;
+  --card: rgba(255,255,255,0.06);
+  --cardBorder: rgba(255,255,255,0.10);
+  --text: rgba(255,255,255,0.92);
+  --muted: rgba(255,255,255,0.70);
+}
+
+.home{
+  min-height: 100vh;
+  padding: 28px 16px 48px;
+  color: var(--text);
+  background: radial-gradient(1000px 600px at 50% 0%, rgba(97,218,251,0.12), transparent 60%),
+              linear-gradient(180deg, #081023, #060a14);
+}
+
+.hero{
+  max-width: 920px;
+  margin: 0 auto 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.avatar{
+  width: 200px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 14px;
+  border: 1px solid var(--cardBorder);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+}
+
+.name{
+  margin: 0;
+  font-size: 28px;
+  letter-spacing: 0.2px;
+}
+
+.title{
+  margin: 0;
+  color: var(--muted);
+}
+
+.card{
+  max-width: 920px;
+  margin: 14px auto;
+  padding: 18px 18px;
+  background: var(--card);
+  border: 1px solid var(--cardBorder);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.20);
+}
+
+.card h2{
+  margin: 0 0 10px;
+  font-size: 18px;
+}
+
+.card p{
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.skillsGrid{
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 14px;
+}
+
+@media (max-width: 720px){
+  .skillsGrid{ grid-template-columns: 1fr; }
+}
+
+.skillGroup h3{
+  margin: 8px 0 10px;
+  font-size: 14px;
+  color: var(--text);
+}
+
+.chips{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chip{
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 10px;
+  font-size: 12px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.10);
+  color: rgba(255,255,255,0.86);
+}
+
+.expCard{
+  margin-top: 12px;
+  padding: 14px;
+  border-radius: 14px;
+  background: rgba(0,0,0,0.18);
+  border: 1px solid rgba(255,255,255,0.10);
+}
+
+.expHeader{
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.expCompany{
+  margin: 0;
+  font-size: 16px;
+}
+
+.expMeta{
+  margin-top: 4px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.expDot{ opacity: 0.8; }
+
+.expToggle{
+  cursor: pointer;
+  border: 1px solid rgba(255,255,255,0.14);
+  background: rgba(255,255,255,0.06);
+  color: rgba(255,255,255,0.90);
+  padding: 8px 10px;
+  border-radius: 12px;
+  font-size: 14px;
+  display: inline-flex;
+  gap: 8px;
+  margin-bottom: 10px;
+  align-items: center;
+  transition: transform 0.06s ease-in-out;
+}
+
+.expMenuBtn{
+  cursor: pointer;
+  border: 1px solid rgba(255,255,255,0.14);
+  background: rgba(255, 255, 255, 0.137);
+  color: rgba(255,255,255,0.90);
+  padding: 6px 8px;
+  border-radius: 8px;
+  font-size: 12px;
+  display: inline-flex;
+  gap: 10px;
+  justify-content: center;
+  margin-right: 10px;
+  transition: transform 0.06s ease-in-out;
+}
+
+.expToggle:active{
+  transform: scale(0.9);
+}
+
+.chev{
+  display: inline-block;
+  transform: rotate(0deg);
+  transition: transform 0.15s ease-in-out;
+}
+.chev.open{ transform: rotate(180deg); }
+
+.expBody{
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px dashed rgba(255,255,255,0.14);
+
+  /* collapse */
+  display: none;
+}
+
+.expBody.open{
+  display: block;
+}
+
+.expBodyTitle{
+  margin: 0 0 8px;
+  font-size: 13px;
+  color: rgba(255,255,255,0.88);
+}
+
+.expText{
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.footer{
+  max-width: 920px;
+  margin: 22px auto 0;
+  text-align: center;
+  color: rgba(255,255,255,0.55);
+  font-size: 12px;
+}
+
+.contactRow{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  color: rgba(255,255,255,0.70);
+  font-size: 14px;
+  margin-top: 2px;
+}
+
+.contactDot{
+  opacity: 0.8;
+}
+
+.bullets{
+  margin: 8px 0 0;
+  padding-left: 18px;
+  color: rgba(255,255,255,0.70);
+  line-height: 1.6;
+}
+/* Certificate modal */
+.certModal {
+  position: fixed;
+  inset: 0;
+  background: #000;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+}
+
+.certModalHeader {
+  padding: 12px;
+  background: #111;
+  text-align: right;
+}
+
+.certCloseBtn {
+  background: #e53935;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.certCloseBtn:hover {
+  background: #c62828;
+}
+
+.certFrame {
+  flex: 1;
+  width: 100%;
+  border: none;
+}
+
+/* Certificate links */
+.certLink {
+  background: none;
+  border: none;
+  color: #1976d2;
+  cursor: pointer;
+  padding: 0;
+  font-size: inherit;
+}
+
+.certLink:hover {
+  text-decoration: underline;
+}
