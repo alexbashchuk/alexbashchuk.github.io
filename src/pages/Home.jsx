@@ -132,12 +132,16 @@ export default function Home() {
   const skills = [
     {
       title: "Automation Frameworks",
-      items: ["Playwright (Java, C#)", "Selenium", "Appium (Java)", "Cypress (JS)"],
+      items: ["Playwright (Java, C#)", "Selenium (Java, C#)", "Appium (Java)", "Cypress (JS)"],
     },
     { title: "Programming", items: ["Java", "C#", "Python", "JavaScript", "Groovy"] },
     {
-      title: "Testing & CI/CD",
-      items: ["JUnit", "TestNG", "NUnit", "PyTest", "Maven", "Azure DevOps", "Jenkins"],
+      title: "Test Organizing",
+      items: ["JUnit", "TestNG", "NUnit", "PyTest", "Maven"],
+    },
+    {
+      title: "CI/CD",
+      items: ["Azure DevOps", "Jenkins"],
     },
     { title: "Databases", items: ["Oracle", "MongoDB", "SQL/NoSQL queries"] },
     { title: "APIs", items: ["REST APIs for SaaS", "SoapUI", "Postman", "RestAssured"] },

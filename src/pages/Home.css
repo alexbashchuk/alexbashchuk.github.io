@@ -137,7 +137,8 @@
   padding: 8px 10px;
   border-radius: 12px;
   font-size: 14px;
-  display: inline-flex;
+  display: inline-table;
+  overflow: scroll;
   gap: 8px;
   margin-bottom: 10px;
   align-items: center;
