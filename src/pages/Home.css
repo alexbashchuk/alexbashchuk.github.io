@@ -137,8 +137,7 @@
   padding: 8px 10px;
   border-radius: 12px;
   font-size: 14px;
-  display: inline-table;
-  overflow: scroll;
+  display: inline-flex;
   gap: 8px;
   margin-bottom: 10px;
   align-items: center;
@@ -272,4 +271,57 @@
 
 .certLink:hover {
   text-decoration: underline;
+}
+/* ===== Mobile layout fixes for Experience cards ===== */
+@media (max-width: 520px) {
+  /* Stack title/meta and button block vertically */
+  .expHeader {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  /* Let the left side use full width */
+  .expTitleBlock {
+    width: 100%;
+    min-width: 0;
+  }
+
+  /* Allow meta to wrap nicely on small screens */
+  .expMeta {
+    flex-wrap: wrap;
+    row-gap: 6px;
+  }
+
+  /* Remove dot separators when wrapping (looks cleaner) */
+  .expDot {
+    display: none;
+  }
+
+  /* Make the button block full width */
+  .expToggleWrap {
+    width: 100%;
+  }
+
+  /* Make the main button full width and allow text wrapping */
+  .expToggle {
+    width: 100%;
+    justify-content: space-between;
+    white-space: normal;
+    text-align: left;
+  }
+
+  /* Menu becomes a vertical list (no horizontal overflow) */
+  .expMenu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .expMenuBtn {
+    width: 100%;
+    margin-right: 0; /* remove desktop spacing */
+    justify-content: center;
+  }
 }
