@@ -138,7 +138,8 @@
   border-radius: 12px;
   font-size: 14px;
   display: inline-flex;
-  gap: 8px;
+  flex-direction: column;
+  gap: 10px;
   margin-bottom: 10px;
   align-items: center;
   transition: transform 0.06s ease-in-out;
@@ -153,6 +154,7 @@
   border-radius: 8px;
   font-size: 12px;
   display: inline-flex;
+  flex-direction: column;
   gap: 10px;
   justify-content: center;
   margin-right: 10px;
@@ -293,7 +295,7 @@
     row-gap: 6px;
   }
 
-  /* Remove dot separators when wrapping (looks cleaner) */
+  /* Remove dot separators when wrapping */
   .expDot {
     display: none;
   }
