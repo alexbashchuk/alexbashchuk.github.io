@@ -274,6 +274,15 @@
 .certLink:hover {
   text-decoration: underline;
 }
+
+/* Certificate show limitation */
+.certImage {
+  max-width: 95vw;
+  max-height: 90vh;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
 /* ===== Mobile layout fixes for Experience cards ===== */
 @media (max-width: 520px) {
   /* Stack title/meta and button block vertically */

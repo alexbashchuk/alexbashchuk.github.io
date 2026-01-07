@@ -1,12 +1,12 @@
 import { useId, useState } from "react";
 import "./Home.css";
 import profilePhoto from "../assets/my_photo/2025.png";
-import as1Pdf from "../assets/certificates/AS1.pdf";
-import as2Pdf from "../assets/certificates/AS2.pdf";
-import tds1Pdf from "../assets/certificates/TDS1.pdf";
-import tds2Pdf from "../assets/certificates/TDS2.pdf";
-import qtestPdf from "../assets/certificates/qTest.pdf";
-import ctflPdf from "../assets/certificates/CTFL.pdf";
+import as1Img from "../assets/certificates/AS1.jpg";
+import as2Img from "../assets/certificates/AS2.jpg";
+import tds1Img from "../assets/certificates/TDS1.jpg";
+import tds2Img from "../assets/certificates/TDS2.jpg";
+import qtestImg from "../assets/certificates/qTest.jpg";
+import ctflImg from "../assets/certificates/CTFL.jpg";
 
 function ExperienceItem({ company, role, location, dates, details, longWorkStory }) {
   const panelId = useId();
@@ -339,35 +339,37 @@ export default function Home() {
           <li>
             Tricentis Tosca:
             {" "}
-            <button className="certLink" onClick={() => openCert(as1Pdf)}>AS1</button>,
+            <button className="certLink" onClick={() => openCert(as1Img)}>AS1</button>,
             {" "}
-            <button className="certLink" onClick={() => openCert(as2Pdf)}>AS2</button>,
+            <button className="certLink" onClick={() => openCert(as2Img)}>AS2</button>,
             {" "}
-            <button className="certLink" onClick={() => openCert(tds1Pdf)}>TDS1</button>,
+            <button className="certLink" onClick={() => openCert(tds1Img)}>TDS1</button>,
             {" "}
-            <button className="certLink" onClick={() => openCert(tds2Pdf)}>TDS2</button>,
+            <button className="certLink" onClick={() => openCert(tds2Img)}>TDS2</button>,
             {" "}
-            <button className="certLink" onClick={() => openCert(qtestPdf)}>qTest</button>
+            <button className="certLink" onClick={() => openCert(qtestImg)}>qTest</button>
           </li>
           <li>
             ASTQB:
             {" "}
-            <button className="certLink" onClick={() => openCert(ctflPdf)}>CTFL</button>
+            <button className="certLink" onClick={() => openCert(ctflImg)}>CTFL</button>
           </li>
         </ul>
       </section>
 
       {activeCert && (
-        <div className="certModal" role="dialog" aria-modal="true">
+        <div className="certModal" role="dialog" aria-modal="true" onContextMenu={(e) => e.preventDefault()}>
           <div className="certModalHeader">
             <button className="certCloseBtn" onClick={closeCert}>
               CLOSE ✕
             </button>
           </div>
-            <iframe
+            <img
               src={activeCert}
-              title="Certificate PDF"
-              className="certFrame"
+              alt="Certificate"
+              className="certImage"
+              draggable={false}
+              onContextMenu={(e) => e.preventDefault()}
             />
         </div>
 )}
