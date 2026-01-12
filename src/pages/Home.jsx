@@ -1,5 +1,7 @@
 import { useId, useState } from "react";
 import "./Home.css";
+import { useEffect, useRef } from "react";
+import { useLocation, Link } from "react-router-dom";
 import profilePhoto from "../assets/my_photo/2025.png";
 import as1Img from "../assets/certificates/AS1.jpg";
 import as2Img from "../assets/certificates/AS2.jpg";
@@ -114,7 +116,18 @@ function ExperienceItem({ company, role, location, dates, details, longWorkStory
 }
 
 export default function Home() {
+  const location = useLocation();
+  const automationProjectsRef = useRef(null);
   const [activeCert, setActiveCert] = useState(null);
+
+  useEffect(() => {
+  if (location.state?.scrollTo === "automation-projects") {
+    automationProjectsRef.current?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  }
+}, [location]);
 
   function openCert(pdf) {
     setActiveCert(pdf);
@@ -353,6 +366,17 @@ export default function Home() {
             ASTQB:
             {" "}
             <button className="certLink" onClick={() => openCert(ctflImg)}>CTFL</button>
+          </li>
+        </ul>
+      </section>
+
+      <section className="card" aria-label="Automation Projects Examples">
+        <h2>Automation Projects Examples</h2>
+        <ul className="bullets">
+          <li>
+            <Link className="certLink" to="/java-playwright">
+              Java Playwright Automation Project
+            </Link>
           </li>
         </ul>
       </section>

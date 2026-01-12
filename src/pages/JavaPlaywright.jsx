@@ -1,4 +1,5 @@
 import "./Home.css";
+import { Link } from "react-router-dom";
 
 export default function JavaPlaywright() {
   const githubUrl = "https://github.com/alexbashchuk/playwright-java-demo";
@@ -77,6 +78,12 @@ export default function JavaPlaywright() {
 
   return (
     <main className="home">
+      <section className="card" aria-label="Navigation">
+        <Link className="certLink" to="/">
+          ⌂ Home
+        </Link>
+      </section>
+
       <section className="hero" aria-label="Java Playwright Project">
         <h1 className="name">Java + Playwright Automation Project</h1>
         <p className="title">
