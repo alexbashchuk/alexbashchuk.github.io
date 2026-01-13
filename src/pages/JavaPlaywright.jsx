@@ -1,9 +1,11 @@
 import "./Home.css";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export default function JavaPlaywright() {
   const githubUrl = "https://github.com/alexbashchuk/playwright-java-demo";
   const youtubeUrl = "https://youtu.be/7d74GlFB3Lg";
+   const navigate = useNavigate();
 
   const techStack = [
     "Java 17",
@@ -78,11 +80,12 @@ export default function JavaPlaywright() {
 
   return (
     <main className="home">
-      <section className="card" aria-label="Navigation">
-        <Link className="certLink" to="/">
+        <button
+          className="navButton"
+          onClick={() => navigate("/")}
+        >
           ⌂ Home
-        </Link>
-      </section>
+        </button>
 
       <section className="hero" aria-label="Java Playwright Project">
         <h1 className="name">Java + Playwright Automation Project</h1>
