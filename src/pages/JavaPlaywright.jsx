@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 export default function JavaPlaywright() {
   const githubUrl = "https://github.com/alexbashchuk/playwright-java-demo";
   const youtubeUrl = "https://youtu.be/7d74GlFB3Lg";
-   const navigate = useNavigate();
+  const navigate = useNavigate();
 
   const techStack = [
     "Java 17",
@@ -80,12 +80,16 @@ export default function JavaPlaywright() {
 
   return (
     <main className="home">
-        <button
-          className="navButton"
-          onClick={() => navigate("/")}
+      <button
+        className="navButton"
+        onClick={() =>
+          navigate("/", {
+            state: { scrollTo: "automation-projects" }
+          })
+        }
         >
-          ⌂ Home
-        </button>
+        ⌂ Home
+      </button>
 
       <section className="hero" aria-label="Java Playwright Project">
         <h1 className="name">Java + Playwright Automation Project</h1>

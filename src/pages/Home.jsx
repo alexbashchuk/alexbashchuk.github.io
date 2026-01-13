@@ -123,7 +123,7 @@ export default function Home() {
   useEffect(() => {
   if (location.state?.scrollTo === "automation-projects") {
     automationProjectsRef.current?.scrollIntoView({
-      behavior: "smooth",
+      behavior: "auto",
       block: "start",
     });
   }
@@ -370,7 +370,11 @@ export default function Home() {
         </ul>
       </section>
 
-      <section className="card" aria-label="Automation Projects Examples">
+      <section
+        className="card"
+        aria-label="Automation Projects Examples"
+        ref={automationProjectsRef}
+        >
         <h2>Automation Projects Examples</h2>
         <ul className="bullets">
           <li>
