@@ -376,13 +376,19 @@ export default function Home() {
         ref={automationProjectsRef}
         >
         <h2>Automation Projects Examples</h2>
-        <ul className="bullets">
-          <li>
-            <Link className="certLink" to="/java-playwright">
-              Java Playwright Automation Project
-            </Link>
-          </li>
-        </ul>
+          <ul className="bullets">
+            <li>
+              <Link className="certLink" to="/java-playwright">
+                Java Playwright Automation Project
+              </Link>
+            </li>
+            <li>
+              <Link className="certLink" to="/csharp-mobile">
+                C# + Selenium + Appium + NUnit Automation Project
+              </Link>
+            </li>
+          </ul>
+
       </section>
 
       {activeCert && (
