@@ -391,7 +391,7 @@ export default function Home() {
           <ul className="bullets">
             <li>
               <Link className="certLink" to="/java-playwright">
-                Java Playwright Automation Project
+                Java + Playwright + OpenCV + JUnit Automation Project
               </Link>
             </li>
             <li>
