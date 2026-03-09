@@ -14,10 +14,6 @@ function ExperienceItem({ company, role, location, dates, details, longWorkStory
   const panelId = useId();
   const menuId = useId();
 
-  const location = useLocation();
-  const navigate = useNavigate();
-  const automationProjectsRef = useRef(null);
-
   const [menuOpen, setMenuOpen] = useState(false);
   const [panelOpen, setPanelOpen] = useState(false);
   const [view, setView] = useState("details"); // 'details' | 'story'
@@ -121,17 +117,18 @@ function ExperienceItem({ company, role, location, dates, details, longWorkStory
 
 export default function Home() {
   const location = useLocation();
+  const navigate = useNavigate();
   const automationProjectsRef = useRef(null);
   const [activeCert, setActiveCert] = useState(null);
 
   useEffect(() => {
-  if (location.state?.scrollTo === "automation-projects") {
-    automationProjectsRef.current?.scrollIntoView({
-      behavior: "auto",
-      block: "start",
-    });
-  }
-}, [location]);
+    if (location.state?.scrollTo === "automation-projects") {
+      automationProjectsRef.current?.scrollIntoView({
+        behavior: "auto",
+        block: "start",
+      });
+    }
+  }, [location]);
 
   function openCert(pdf) {
     setActiveCert(pdf);
