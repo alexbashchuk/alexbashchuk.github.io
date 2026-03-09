@@ -305,6 +305,11 @@
   -webkit-user-drag: none;
 }
 
+/* Automation Projects section title */
+section[aria-label="Automation Projects Examples"] h2 {
+  color: #4caf50;
+}
+
 /* ===== Mobile layout fixes for Experience cards ===== */
 @media (max-width: 520px) {
   /* Stack title/meta and button block vertically */

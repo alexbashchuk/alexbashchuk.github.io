@@ -1,7 +1,7 @@
 import { useId, useState } from "react";
 import "./Home.css";
 import { useEffect, useRef } from "react";
-import { useLocation, Link } from "react-router-dom";
+import { useLocation, Link, useNavigate } from "react-router-dom";
 import profilePhoto from "../assets/my_photo/2025.png";
 import as1Img from "../assets/certificates/AS1.jpg";
 import as2Img from "../assets/certificates/AS2.jpg";
@@ -13,6 +13,10 @@ import ctflImg from "../assets/certificates/CTFL.jpg";
 function ExperienceItem({ company, role, location, dates, details, longWorkStory }) {
   const panelId = useId();
   const menuId = useId();
+
+  const location = useLocation();
+  const navigate = useNavigate();
+  const automationProjectsRef = useRef(null);
 
   const [menuOpen, setMenuOpen] = useState(false);
   const [panelOpen, setPanelOpen] = useState(false);
@@ -314,6 +318,17 @@ export default function Home() {
 
       <section className="card" aria-label="Technical Skills">
         <h2>Technical Skills</h2>
+
+        <div style={{ marginBottom: "12px" }}>
+          <button
+            className="navButton"
+            onClick={() =>
+              navigate("/", { state: { scrollTo: "automation-projects" } })
+            }
+          >
+            Automation Projects Examples
+          </button>
+        </div>
 
         <div className="skillsGrid">
           {skills.map((g) => (
