@@ -163,7 +163,7 @@ export default function Home() {
 
   const experience = [
     {
-      company: "Southern Co.",
+      company: "Southern Company",
       role: "Senior QA Automation Analyst",
       location: "Atlanta, GA (Remote)",
       dates: "07/2024 – 11/2025",
