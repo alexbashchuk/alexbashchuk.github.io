@@ -391,17 +391,17 @@ export default function Home() {
           <ul className="bullets">
             <li>
               <Link className="certLink" to="/java-playwright">
-                Java + Playwright + OpenCV + JUnit Automation Project
+                WebUI and Picture Validation Automation Project: Java + Playwright + OpenCV + JUnit
               </Link>
             </li>
             <li>
               <Link className="certLink" to="/csharp-mobile">
-                C# + Selenium + Appium + NUnit Automation Project
+                Mobile App Automation Project: C# + Selenium + Appium + NUnit
               </Link>
             </li>
              <li>
               <Link className="certLink" to="/jmeter-jenkins">
-                JMeter + Jenkins API Automation Project
+                API Automation Project: JMeter + Jenkins CI/CD
               </Link>
             </li>
           </ul>
