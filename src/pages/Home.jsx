@@ -399,6 +399,11 @@ export default function Home() {
                 C# + Selenium + Appium + NUnit Automation Project
               </Link>
             </li>
+             <li>
+              <Link className="certLink" to="/jmeter-jenkins">
+                JMeter + Jenkins API Automation Project
+              </Link>
+            </li>
           </ul>
 
       </section>
