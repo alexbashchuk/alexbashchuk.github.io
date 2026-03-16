@@ -388,24 +388,32 @@ export default function Home() {
         ref={automationProjectsRef}
         >
         <h2>Automation Projects Examples</h2>
-          <ul className="bullets">
-            <li>
-              <Link className="certLink" to="/java-playwright">
-                WebUI and Picture Validation Automation Project: Java + Playwright + OpenCV + JUnit
-              </Link>
-            </li>
-            <li>
-              <Link className="certLink" to="/csharp-mobile">
-                Mobile App Automation Project: C# + Selenium + Appium + NUnit
-              </Link>
-            </li>
-             <li>
-              <Link className="certLink" to="/jmeter-jenkins">
-                API Automation Project: JMeter + Jenkins CI/CD
-              </Link>
-            </li>
-          </ul>
-
+        <ul className="bullets">
+          <li>
+            <span className="expCompany">
+              WebUI and Picture Validation Automation Project:
+            </span>{" "}
+            <Link className="certLink" to="/java-playwright">
+              Java + Playwright + OpenCV + JUnit
+            </Link>
+          </li>
+          <li>
+            <span className="expCompany">
+              Mobile App Automation Project:
+            </span>{" "}
+            <Link className="certLink" to="/csharp-mobile">
+              C# + Selenium + Appium + NUnit
+            </Link>
+          </li>
+          <li>
+            <span className="expCompany">
+              API Automation Project:
+            </span>{" "}
+            <Link className="certLink" to="/jmeter-jenkins">
+              JMeter + Jenkins CI/CD
+            </Link>
+          </li>
+        </ul>
       </section>
 
       {activeCert && (
