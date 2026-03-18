@@ -391,7 +391,7 @@ export default function Home() {
         <ul className="bullets">
           <li>
             <span className="expCompany">
-              My GitHub Portfolio Made With JS, React, andVite:
+              My GitHub Portfolio Project (this website codebase):
             </span>{" "}
             <Link className="certLink" to="/portfolio-github">
               JavaScript + React + Vite
@@ -399,7 +399,7 @@ export default function Home() {
           </li>
           <li>
             <span className="expCompany">
-              WebUI and Picture Validation Automation Project:
+              WebUI and Picture Validation QA Automation Project:
             </span>{" "}
             <Link className="certLink" to="/java-playwright">
               Java + Playwright + OpenCV + JUnit
@@ -407,7 +407,7 @@ export default function Home() {
           </li>
           <li>
             <span className="expCompany">
-              Mobile App Automation Project:
+              Mobile App QA Automation Project:
             </span>{" "}
             <Link className="certLink" to="/csharp-mobile">
               C# + Selenium + Appium + NUnit
@@ -415,7 +415,7 @@ export default function Home() {
           </li>
           <li>
             <span className="expCompany">
-              API Automation Project:
+              API QA Automation Project:
             </span>{" "}
             <Link className="certLink" to="/jmeter-jenkins">
               JMeter + Jenkins CI/CD
