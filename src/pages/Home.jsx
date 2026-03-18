@@ -323,7 +323,7 @@ export default function Home() {
               navigate("/", { state: { scrollTo: "automation-projects" } })
             }
           >
-            Automation Projects Examples
+            My Demo Projects
           </button>
         </div>
 
@@ -387,7 +387,7 @@ export default function Home() {
         aria-label="Automation Projects Examples"
         ref={automationProjectsRef}
         >
-        <h2>Automation Projects Examples</h2>
+        <h2>My Demo Projects</h2>
         <ul className="bullets">
           <li>
             <span className="expCompany">
