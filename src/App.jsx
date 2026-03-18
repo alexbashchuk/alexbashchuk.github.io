@@ -12,6 +12,7 @@ export default function App() {
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/portfolio-github" element={<PortfolioGithub />} />
         <Route path="/java-playwright" element={<JavaPlaywright />} />
         <Route path="/csharp-mobile" element={<CSharpMobile />} />
         <Route path="/jmeter-jenkins" element={<JMeterJenkins />} />

@@ -391,6 +391,14 @@ export default function Home() {
         <ul className="bullets">
           <li>
             <span className="expCompany">
+              My GitHub Portfolio Made With JS, React, andVite:
+            </span>{" "}
+            <Link className="certLink" to="/portfolio-github">
+              JavaScript + React + Vite
+            </Link>
+          </li>
+          <li>
+            <span className="expCompany">
               WebUI and Picture Validation Automation Project:
             </span>{" "}
             <Link className="certLink" to="/java-playwright">
