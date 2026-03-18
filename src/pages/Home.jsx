@@ -141,14 +141,14 @@ export default function Home() {
   }
 
   const summary =
-    "Software Development Engineer in Test (SDET) with 14 years of experience building code-driven automation frameworks for web, API, mobile, and enterprise platforms. Expert in Java, C#, Python, and TypeScript with a strong focus on Playwright and Selenium based automation. Proven ability to integrate automation into CI/CD pipelines and mentor engineers on modern QA engineering practices, including AI models engineering help.";
+    "Software Development Engineer in Test (SDET) with 14 years of experience building code-driven automation frameworks for web, API, mobile, and enterprise platforms. Expert in Java, C#, Python, TypeScript, and JavaScript with a strong focus on Playwright and Selenium based automation. Proven ability to integrate automation into CI/CD pipelines and mentor engineers on modern QA engineering practices, including AI models engineering help.";
 
   const skills = [
     {
       title: "Automation Frameworks",
       items: ["Playwright (Java, C#)", "Selenium (Java, C#)", "Appium (Java, C#)", "Cypress (JS, TS)", "Tosca (Low-Code)"],
     },
-    { title: "Programming", items: ["Java", "C#", "Python", "JavaScript", "Groovy"] },
+    { title: "Programming", items: ["Java", "C#", "Python", "JavaScript", "TypeScript", "Groovy"] },
     {
       title: "Test Organizing",
       items: ["JUnit", "TestNG", "NUnit", "PyTest", "Maven"],
