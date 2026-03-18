@@ -2,6 +2,7 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import ScrollToTop from "./ScrollToTop";
 
 import Home from "./pages/Home.jsx";
+import PortfolioGithub from "./pages/PortfolioGithub.jsx";
 import JavaPlaywright from "./pages/JavaPlaywright.jsx";
 import CSharpMobile from "./pages/CSharpMobile.jsx";
 import JMeterJenkins from "./pages/JMeter-Jenkins.jsx";
