@@ -323,7 +323,7 @@ export default function Home() {
               navigate("/", { state: { scrollTo: "automation-projects" } })
             }
           >
-            My Demo Projects
+            My QA Automation Demo Projects
           </button>
         </div>
 
@@ -387,7 +387,7 @@ export default function Home() {
         aria-label="Automation Projects Examples"
         ref={automationProjectsRef}
         >
-        <h2>My Demo Projects</h2>
+        <h2>My QA Automation Demo Projects</h2>
         <ul className="bullets">
           <li>
             <span className="expCompany">
@@ -407,10 +407,18 @@ export default function Home() {
           </li>
           <li>
             <span className="expCompany">
-              Mobile App QA Automation Project:
+              Mobile Web App QA Automation Project:
             </span>{" "}
             <Link className="certLink" to="/csharp-mobile">
               C# + Selenium + Appium + NUnit
+            </Link>
+          </li>
+          <li>
+            <span className="expCompany">
+              Mobile Hybrid App QA Automation Project:
+            </span>{" "}
+            <Link className="certLink" to="/java-mobile">
+              Java + Selenium + Appium + Charles Proxy + TestNG
             </Link>
           </li>
           <li>
