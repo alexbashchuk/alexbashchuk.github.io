@@ -1,6 +1,6 @@
 import "./Home.css";
 import { useNavigate } from "react-router-dom";
-import rcclMobileTestPptx from "../assets/presentations/RCCL-Mobile-Test.pptx";
+import rcclMobileTestPptx from "../assets/presentations/RCCL-Mobile-Test.pptx?url";
 
 export default function JavaMobile() {
   const githubUrl = "https://github.com/alexbashchuk/Java-TestNG-Selenium-Appium-ProxyServer";
@@ -35,26 +35,24 @@ export default function JavaMobile() {
       </button>
 
       <section className="hero" aria-label="Java Mobile Automation Project">
-        <h1 className="name">Java + Selenium + Appium + Charles Proxy + TestNG Automation Project</h1>
+        <h1 className="name">
+          Java + Selenium + Appium + Charles Proxy + TestNG Automation Project
+        </h1>
         <p className="title">
-          Android emulator bootstrap • Mobile Chrome web testing • Portfolio UI validation
+          Android emulator bootstrap • Mobile app testing • Proxy-based traffic validation
         </p>
 
         <div className="contactRow" aria-label="Project links">
           <a className="certLink" href={githubUrl} target="_blank" rel="noreferrer">
             GitHub Repo
           </a>
-          <span className="contactDot" aria-hidden="true">
-            •
-          </span>
+          <span className="contactDot" aria-hidden="true">•</span>
           <a className="certLink" href={youtubeUrlForTests} target="_blank" rel="noreferrer">
-            Test Run Video (YouTube)
+            Test Run Video
           </a>
-          <span className="contactDot" aria-hidden="true">
-            •
-          </span>
+          <span className="contactDot" aria-hidden="true">•</span>
           <a className="certLink" href={youtubeUrlForReport} target="_blank" rel="noreferrer">
-            TestNG Report Analysis Video (YouTube)
+            TestNG Report Analysis
           </a>
         </div>
       </section>
@@ -62,10 +60,10 @@ export default function JavaMobile() {
       <section className="card" aria-label="Project Description">
         <h2>Project Description</h2>
         <p>
-          This project demonstrates a Java mobile web automation framework that starts an Android
-          emulator, launches an Appium server, opens the Royal Caribbean Mobile App on the emulator,
-          and validates basic functionality. The current tests focus on Guest Experience with Cruise
-          Planner and Day Planner.
+          This project demonstrates a Java-based mobile automation framework for Android testing
+          with Appium, Selenium WebDriver, TestNG, and Charles Proxy integration. It automates
+          Royal Caribbean mobile app validation, including guest flows and backend request
+          verification through captured proxy traffic.
         </p>
       </section>
 
@@ -84,12 +82,12 @@ export default function JavaMobile() {
         <h2>Framework Flow</h2>
         <ul className="bullets">
           <li>AVD emulator cleanup</li>
-          <li>Charles Proxy Start</li>
-          <li>AVD Emulator Start</li>
+          <li>Charles Proxy start</li>
+          <li>AVD Emulator start</li>
           <li>Appium server start</li>
-          <li>Test Cases Execution and Information Validation through the Charles Proxy Server log file parsing</li>
-          <li>Cleanup After Test Execution (AVD and Appium server stop)</li>
-          <li>TestNG Report creation</li>
+          <li>Test execution and validation through Charles Proxy log parsing</li>
+          <li>Cleanup after test execution (AVD and Appium shutdown)</li>
+          <li>TestNG report creation</li>
         </ul>
       </section>
 
@@ -103,19 +101,14 @@ export default function JavaMobile() {
             </a>
           </li>
           <li>
-            TestNG Report Analysis:{" "}
+            TestNG report analysis:{" "}
             <a className="certLink" href={youtubeUrlForReport} target="_blank" rel="noreferrer">
               YouTube video
             </a>
           </li>
           <li>
             PowerPoint presentation:{" "}
-            <a
-              className="certLink"
-              href={rcclMobileTestPptx}
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a className="certLink" href={rcclMobileTestPptx} target="_blank" rel="noreferrer">
               RCCL-Mobile-Test.pptx
             </a>
           </li>
@@ -132,21 +125,16 @@ export default function JavaMobile() {
         <h2>Notes</h2>
         <ul className="bullets">
           <li>
-            The framework is built for <strong>Cruise Guest Experience Mobile Hybrid App</strong>.
+            The framework is built for <strong>Cruise Guest Experience</strong> mobile validation.
           </li>
           <li>
             The environment bootstrap is a major part of the project: emulator startup, Appium
-            startup, Charles Proxy bootstrap with the mobile device, ports resolution, adb
-            readiness, and cleanup - all handled in code.
+            startup, Charles Proxy connection, port resolution, ADB readiness, and cleanup are
+            handled in code.
           </li>
           <li>
-            The Page Object uses scrolling/swiping support because some elements are far
-            down the mobile pages and need to be brought into view before interaction.
-          </li>
-          <li>
-            This project is a cut for the Portfolio demo. All business sensitive files (i.e.
-            certificates, keystores, etc.) are removed to avoid any security issues. The framework
-            is built to be easily extendable for real devices.
+            The framework is prepared for extension to additional mobile flows and real device
+            execution.
           </li>
         </ul>
       </section>
