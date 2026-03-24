@@ -1,5 +1,6 @@
-import "./Home.css";
+iimport "./Home.css";
 import { useNavigate } from "react-router-dom";
+import rcclMobileTestPptx from "../assets/presentations/RCCL-Mobile-Test.pptx";
 
 export default function JavaMobile() {
   const githubUrl = "https://github.com/alexbashchuk/Java-TestNG-Selenium-Appium-ProxyServer";
@@ -105,6 +106,17 @@ export default function JavaMobile() {
             TestNG Report Analysis:{" "}
             <a className="certLink" href={youtubeUrlForReport} target="_blank" rel="noreferrer">
               YouTube video
+            </a>
+          </li>
+          <li>
+            PowerPoint presentation:{" "}
+            <a
+              className="certLink"
+              href={rcclMobileTestPptx}
+              target="_blank"
+              rel="noreferrer"
+            >
+              RCCL-Mobile-Test.pptx
             </a>
           </li>
           <li>
