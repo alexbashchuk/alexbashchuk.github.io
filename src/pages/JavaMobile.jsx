@@ -1,4 +1,4 @@
-iimport "./Home.css";
+import "./Home.css";
 import { useNavigate } from "react-router-dom";
 import rcclMobileTestPptx from "../assets/presentations/RCCL-Mobile-Test.pptx";
 
