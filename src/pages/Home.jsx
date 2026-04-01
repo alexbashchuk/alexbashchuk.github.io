@@ -429,6 +429,14 @@ export default function Home() {
               JMeter + Jenkins CI/CD
             </Link>
           </li>
+          <li>
+            <span className="expCompany">
+              WebUI Cypress QA Automation Project:
+            </span>{" "}
+            <Link className="certLink" to="/cypress-typescript-cicd">
+              Cypress + TypeScript + Allure + GitHub Actions
+            </Link>
+          </li>
         </ul>
       </section>
 

@@ -7,6 +7,7 @@ import JavaPlaywright from "./pages/JavaPlaywright.jsx";
 import CSharpMobile from "./pages/CSharpMobile.jsx";
 import JavaMobile from "./pages/JavaMobile.jsx";
 import JMeterJenkins from "./pages/JMeter-Jenkins.jsx";
+import CypressTypeScriptCICD from "./pages/CypressTypeScriptCICD.jsx";
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
         <Route path="/csharp-mobile" element={<CSharpMobile />} />
         <Route path="/java-mobile" element={<JavaMobile />} />
         <Route path="/jmeter-jenkins" element={<JMeterJenkins />} />
+        <Route path="/cypress-typescript-cicd" element={<CypressTypeScriptCICD />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </>
