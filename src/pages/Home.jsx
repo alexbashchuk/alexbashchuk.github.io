@@ -146,7 +146,7 @@ export default function Home() {
   const skills = [
     {
       title: "Automation Frameworks",
-      items: ["Playwright (Java, C#)", "Selenium (Java, C#)", "Appium (Java, C#)", "Cypress (JS, TS)", "Tosca (Low-Code)"],
+      items: ["Playwright (Java, C#)", "Selenium (Java, C#, Python)", "Appium (Java, C#)", "Cypress (JS, TS)", "Tosca (Low-Code)"],
     },
     { title: "Programming", items: ["Java", "C#", "Python", "JavaScript", "TypeScript", "Groovy"] },
     {
@@ -167,16 +167,16 @@ export default function Home() {
       role: "Senior QA Automation Analyst",
       location: "Atlanta, GA (Remote)",
       dates: "07/2024 – 11/2025",
-      details: ` Designed and implemented Java-based Playwright automation for Angular web applications, REST APIs for SaaS applications, and Oracle databases achieving ~80% regression execution time reduction.
+      details: ` Designed and implemented Python-based Playwright automation for Angular web applications, REST APIs for SaaS applications, and Oracle databases achieving ~80% regression execution time reduction.
           Integrated automation into Azure DevOps pipelines and led engineers in adopting engineering-driven testing standards.
           Created requirements-to-test coverage mapping using an internally integrated LLM-based analysis tool to identify gaps, edge cases, and risk areas.`,
       longWorkStory: ` 
         I joined Southern Company in July 2024 as a contract Senior QA Automation Analyst to design and implement automation testing for the Energy Assistance Program (EAP) web portal. At that time, Southern Company had existing automation efforts for internal corporate portals using Java + Selenium and for the Builders Connect portal using Java + Playwright, but the EAP portal relied entirely on manual testing.
 
-        Because the EAP application was heavily built with Angular and dynamic JavaScript-driven UI rendering, I selected Java with Playwright as the core automation technology. Compared to Selenium, Playwright provided superior handling of dynamic DOM updates and asynchronous UI behavior, significantly improving locator stability and test reliability.
+        Because the EAP application was heavily built with Angular and dynamic JavaScript-driven UI rendering, I selected Python with Playwright as the core automation technology. Compared to Selenium, Playwright provided superior handling of dynamic DOM updates and asynchronous UI behavior, significantly improving locator stability and test reliability.
 
-        Starting from scratch, I architected and developed 16 scalable Java Playwright automation suites, using JUnit 5 for test control and Maven for build orchestration.
-        I used Playwright requests to validate API interface of the EAP portal and Java JDBC connection to validate results of UI operations in the Oracle databases (users, payments).
+        Starting from scratch, I architected and developed 16 scalable Python Playwright automation suites, using JUnit 5 for test control and Maven for build orchestration.
+        I used Playwright requests to validate API interface of the EAP portal and Database connection to validate results of UI operations in the Oracle databases (users, payments).
         
         I published the automation framework to Azure Repos, including the Maven Wrapper, ensuring consistent builds across local environments and Azure DevOps pipelines.
         The automation reduced regression execution time by approximately 80% compared to manual testing and enabled CI/CD integration through Azure DevOps pipelines. 
@@ -222,24 +222,10 @@ export default function Home() {
       `
     },
     {
-      company: "Ford Motor Company",
-      role: "QA Automation Engineer",
-      location: "Sunrise, FL",
-      dates: "02/2019 – 02/2020",
-      details: "Optimized Python PyTest automation for ECU and embedded systems using CAN protocol.",
-      longWorkStory: ` 
-      At Ford Motor Company, I supported embedded automotive systems testing focused on ECU, multimedia, and vehicle network integrations.
-
-      I managed Jenkins controller and agent infrastructure using Groovy and DSL scripting and optimized Python PyTest automation leveraging CAN and CANtools libraries, improving test reliability by approximately 30%.
-
-      Also, my work included hands-on configuration of ECU->Multimedia->Network lab environments setup and connections to the Jenkins agents, enabling firmware and software validation over the CAN protocol within Ford’s internal testing facilities.
-      `
-    },
-    {
       company: "Royal Caribbean Ltd.",
       role: "QA Automation System Engineer",
       location: "Miami, FL",
-      dates: "09/2017 – 02/2019",
+      dates: "09/2017 – 02/2020",
       details:
         "Created from scratch Java-based, Maven built, TestNG organized Selenium and Appium automation frameworks for the Royal Guest Experience mobile and web platforms, significantly reducing manual regression effort.",
       longWorkStory: ` 
