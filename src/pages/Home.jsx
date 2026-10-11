@@ -141,42 +141,51 @@ export default function Home() {
   }
 
   const summary =
-    "Software Development Engineer in Test (SDET) with 14 years of experience building code-driven automation frameworks for web, API, mobile, and enterprise platforms. Expert in Java, C#, Python, TypeScript, and JavaScript with a strong focus on Playwright and Selenium based automation. Proven ability to integrate automation into CI/CD pipelines and mentor engineers on modern QA engineering practices, including AI models engineering help.";
+    `Senior SDET / QA Automation Architect with 10+ years of experience delivering automation for web, API, mobile, desktop, and enterprise applications. 
+    Hands-on in Playwright, Selenium, Appium, Cypress, TypeScript, Python, Java, and C#, with recent work in Playwright migration and AI-assisted test generation. 
+    Builds maintainable test frameworks, integrates automated testing into Azure DevOps and Jenkins pipelines, and has reduced manual and regression effort by up to 70% 
+    while mentoring distributed QA teams`;
 
   const skills = [
-    {
-      title: "Automation Frameworks",
-      items: ["Playwright (Java, C#)", "Selenium (Java, C#, Python)", "Appium (Java, C#)", "Cypress (JS, TS)", "Tosca (Low-Code)"],
+    { title: "Automation Frameworks",
+      items: ["Playwright", "Selenium", "Appium", "Cypress", "Tricentis Tosca", "WinAppDriver", "K6", "JMeter", "NeoLoad"],
     },
-    { title: "Programming", items: ["Java", "C#", "Python", "JavaScript", "TypeScript", "Groovy"] },
-    {
-      title: "Test Organizing",
-      items: ["JUnit", "TestNG", "NUnit", "PyTest", "Maven"],
+    { title: "Languages and test frameworks", items: ["TypeScript", "Python", "Java", "C#", "JavaScript", "TestNG", "JUnit", "NUnit", "Pytest", "BDD", "Cucumber", "Gherkin"]
     },
-    {
-      title: "CI/CD",
-      items: ["Azure DevOps", "Jenkins"],
+    { title: "AI-assisted testing",
+      items: ["Cursor", "GitHub Copilot", "Azure Foundry Agents (Azure AI Foundry)", "Microsoft Agent Framework", "MCP servers", "LLM-based test generation"]
     },
-    { title: "Databases", items: ["Oracle", "MongoDB", "SQL/NoSQL queries"] },
-    { title: "APIs", items: ["REST APIs for SaaS", "SoapUI", "Postman", "RestAssured"] },
+    { title: "CI/CD and cloud",
+      items: ["Azure DevOps", "Jenkins", "GitHub", "Docker", "Terraform", "Maven", "Git"]
+    },
+    { title: "API, data and observability",
+      items: ["REST APIs", "Postman", "REST Assured", "SoapUI", "Swagger/OpenAPI", "SQL", "Oracle", "MongoDB", "NoSQL", "Splunk", "Charles Proxy", "Logcat"]
+    },
+    { title: "Leadership & Professional Skills",
+      items: ["Team Leadership", "Staff Review", "Cross-Functional Collaboration", "Organization", "Prioritization", "Multi-Tasking", "Deadline Management"]
+    },
   ];
 
   const experience = [
     {
       company: "Williams Companies",
-      role: "Senior QA Automation Engineer",
+      role: "QA Automation Architect (QA Consultant on contract)",
       location: "Tulsa, OK (Remote)",
       dates: "12/2025 – Present",
       details:
-        "Migrated Tricentis Tosca test coverage to Playwright with TypeScript, using VS Code, GitHub Copilot, and Playwright Agents to improve maintainability, reduce flakiness, and accelerate test development. Helped build a custom QA automation framework for test-case creation, self-healing, centralized execution, and control in a Terraform-managed Azure environment. Implemented AI agents and custom MCP server integrations supporting LLM-based UI, API, and load-test generation and Azure service connections.",
+        `Migrated Tricentis Tosca test coverage to Playwright with TypeScript, using VS Code, GitHub Copilot, and Playwright Agents to improve maintainability, reduce flakiness, and accelerate
+        test development. Co-architected and developed a custom QA automation framework for test-case creation, self-healing, centralized execution, and control in a Terraform-managed Azure environment. Implemented AI agents and custom MCP server integrations supporting LLM-based UI, API, and load-test generation.`,
       longWorkStory: `
-        At Williams Companies, I am working as a Senior QA Automation Engineer on modernizing enterprise test automation.
+        At Williams Companies, I am working as a QA Automation Architect (QA Consultant) on modernizing enterprise test automation.
 
-        I migrated Tricentis Tosca test coverage to a TypeScript-based Playwright approach, using VS Code, GitHub Copilot, and Playwright Agents to make automated tests easier to maintain, less flaky, and faster to develop.
+        I co-architected the modernization of enterprise QA automation: defined modernization of legacy test infrastructure by migrating enterprise Tricentis Tosca test coverage to more flexible, scalable, 
+        and less flaky Playwright and TypeScript framework. Incorporating GitHub Copilot and Playwright Agents to drastically reduce test flakiness, improve code maintainability, and accelerate delivery cycles.
 
-        I also helped build a custom QA automation framework that supports test-case creation, self-healing, centralized execution, and control. The framework ran in a Terraform-managed Azure environment.
+        I also Designed and implemented core components of a cloud-native Next-Gen semi-autonomous QA Framework: designed cloud-native, with self-healing elements automation framework within a Terraform-managed
+        Azure environment, enabling centralized test execution, reporting, and reducing manual troubleshooting.
 
-        In addition, I implemented AI agents and custom MCP server integrations to support LLM-based generation of UI, API, and load tests and to connect the solution with Azure services.
+        In addition, I integrated into QA framework AI & Model Context Protocol (MCP) Architecture: using C# and .NET 8 integrated custom MCP server to connect QA framework with autonomous AI agents
+        to empower it by LLM-driven test cases generation for UI, API, and load tests.
       `,
     },
     {
