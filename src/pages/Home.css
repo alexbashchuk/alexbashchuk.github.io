@@ -129,6 +129,14 @@
 
 .expDot{ opacity: 0.8; }
 
+.expToggleWrap{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
 .expToggle{
   cursor: pointer;
   border: 1px solid rgba(255,255,255,0.14);
@@ -185,6 +193,27 @@
 
 .expToggle:active{
   transform: scale(0.9);
+}
+
+.expClose{
+  cursor: pointer;
+  border: 1px solid rgba(255, 92, 92, 0.65);
+  background: rgba(255, 92, 92, 0.12);
+  color: #ff5c5c;
+  padding: 7px 10px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.expClose:hover{
+  background: rgba(255, 92, 92, 0.22);
+}
+
+.expMenu{
+  flex-basis: 100%;
+  text-align: right;
 }
 
 .chev{

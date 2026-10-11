@@ -90,7 +90,7 @@ export default function CSharpMobile() {
         {
           name: "POM_LandingPage.cs",
           purpose:
-            "Page Object Model for the portfolio landing page. Handles mobile scrolling/swiping, locates company experience blocks, opens work description menus, and validates Short Details / Long Story / Hide Description flows.",
+            "Page Object Model for the portfolio landing page. Handles mobile scrolling/swiping, locates company experience blocks, opens work description menus, and validates Short Details / Long Story selection and the X close control.",
         },
         {
           name: "ButtonsFunctionalityCheckTests.cs",
@@ -197,7 +197,7 @@ export default function CSharpMobile() {
           emulator, launches an Appium server, opens Chrome on the emulator, and validates
           functionality on my portfolio website. The current tests focus on experience-card work
           description behavior, including menu actions such as <strong>Short Details</strong>,
-          <strong> Long Story</strong>, and <strong>Hide Description</strong>.
+          <strong> Long Story</strong>, and the <strong>X</strong> close control.
         </p>
       </section>
 

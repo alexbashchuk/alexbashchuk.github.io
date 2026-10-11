@@ -50,7 +50,7 @@ export default function JavaPlaywright() {
         {
           name: "LandingPage.java",
           purpose:
-            "Page Object Model for the portfolio Home page: selects an Experience block by aria-label, clicks 'Choose work description', validates menu items (Short Details/Long Story/Hide), and opens certificate modals to screenshot the modal element for later image matching.",
+            "Page Object Model for the portfolio Home page: selects an Experience block by aria-label, clicks 'Choose work description', validates Short Details/Long Story and the X close control, and opens certificate modals to screenshot the modal element for later image matching.",
         },
       ],
     },

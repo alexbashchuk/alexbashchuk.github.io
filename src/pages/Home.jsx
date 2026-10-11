@@ -55,10 +55,26 @@ function ExperienceItem({ company, role, location, dates, details, longWorkStory
             {panelOpen
               ? `Work description: ${view === "story" ? "Long Story" : "Short Details"}`
               : "Choose work description"}
-            <span className={`chev ${menuOpen ? "open" : ""}`} aria-hidden="true">
-              ▾
-            </span>
+            {!panelOpen && (
+              <span className={`chev ${menuOpen ? "open" : ""}`} aria-hidden="true">
+                ▾
+              </span>
+            )}
           </button>
+
+          {panelOpen && (
+            <button
+              className="expClose"
+              type="button"
+              aria-label="Close work description"
+              onClick={() => {
+                setPanelOpen(false);
+                setMenuOpen(false);
+              }}
+            >
+              X
+            </button>
+          )}
 
           {menuOpen && (
             <div id={menuId} className="expMenu" role="menu" aria-label="Work description options">
@@ -84,20 +100,6 @@ function ExperienceItem({ company, role, location, dates, details, longWorkStory
               >
                 Long Story
               </button>
-
-              {panelOpen && (
-                <button
-                  type="button"
-                  className="expMenuBtn expMenuBtnSecondary"
-                  role="menuitem"
-                  onClick={() => {
-                    setPanelOpen(false);
-                    setMenuOpen(false);
-                  }}
-                >
-                  Hide description
-                </button>
-              )}
             </div>
           )}
         </div>
