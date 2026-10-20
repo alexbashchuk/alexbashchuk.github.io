@@ -182,7 +182,7 @@ export default function Home() {
         Integrated into QA framework AI & Model Context Protocol (MCP) Architecture: using C# and .NET 8 integrated custom MCP server to connect QA framework with autonomous AI agents to empower it by LLM-driven test cases generation for UI, API, and load tests.
         `,
       longWorkStory: `
-        I gained strong experience in AI-assisted QA framework development at Williams Companies, where I co-architected and developed a custom QA framework environment from the ground up—not simply automated test scripts.
+        I gained strong experience in AI-assisted QA framework development at Williams Companies, where I co-architected and developed a custom QA framework environment from the ground up - not simply automated test scripts.
         I used Blazor WebAssembly and C# to build the framework’s user interface, services, and API layers. During development, I made extensive use of agentic AI coding in Cursor IDE and created a structured set of Markdown-based 
         rules within the OpenSpec framework to guide and supervise AI-assisted development.
         The framework was designed to support the full testing lifecycle: test case creation, execution, maintenance, and archival. For test-case change control, I applied an approach I had previously used at Southern Company: 
