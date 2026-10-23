@@ -178,16 +178,16 @@ export default function Home() {
         Co-architected the modernization of enterprise QA automation: defined modernization of legacy test infrastructure by migrating enterprise Tricentis Tosca test coverage to more flexible, scalable, 
         and less flaky Playwright and TypeScript framework. Incorporated GitHub Copilot and Playwright Agents to reduce test flakiness, improve code maintainability, and accelerate delivery cycles.
         Designed and implemented core components of a cloud-native Next-Gen semi-autonomous QA Framework: designed cloud-native, with self-healing elements automation framework within a Terraform-managed Azure environment, 
-        enabling centralized test execution, reporting, and reducing manual troubleshooting.
+        enabling E2E centralized test execution, including UI, API, and Azure DB (using SQL), reporting, and reducing manual troubleshooting.
         Integrated into QA framework AI & Model Context Protocol (MCP) Architecture: using C# and .NET 8 integrated custom MCP server to connect QA framework with autonomous AI agents to empower it by LLM-driven test cases generation for UI, API, and load tests.
         `,
       longWorkStory: `
         I gained strong experience in AI-assisted QA framework development at Williams Companies, where I co-architected and developed a custom QA framework environment from the ground up - not simply automated test scripts.
-        I used Blazor WebAssembly and C# to build the framework’s user interface, services, and API layers. During development, I made extensive use of agentic AI coding in Cursor IDE and created a structured set of Markdown-based 
+        I used Blazor WebAssembly and C# to build the framework user interface, services, and API layers. During development, I made extensive use of agentic AI coding in Cursor IDE and created a structured set of Markdown-based 
         rules within the OpenSpec framework to guide and supervise AI-assisted development.
         The framework was designed to support the full testing lifecycle: test case creation, execution, maintenance, and archival. For test-case change control, I applied an approach I had previously used at Southern Company: 
-        mapping the Application Under Test (AUT) Azure DevOps repository to UI and API components. 
-        As an enhancement, I incorporated Playwright Agents to help create test cases using data and workflows observed through the deployed application’s web interface.
+        mapping the Application Under Test (AUT) Azure DevOps repository to UI, API, and Azure DB components. 
+        As an enhancement, I incorporated Playwright Agents to help create test cases using data and workflows observed through the deployed application web interface.
         I also implemented an AI-agent feature that analyzed user manuals and user stories to generate BDD Gherkin-based test case descriptions. This helped preserve test context and support updates when the AUT changed.
         For TypeScript-based Playwright automation tests creation, I used the Gherkin test cases, AUT source code in Azure DevOps, and Playwright Agents within VS Code. By analyzing AUT code changes, I developed a process 
         that could identify affected tests and accelerate their updates, going beyond a typical self-healing approach.
@@ -201,14 +201,14 @@ export default function Home() {
       location: "Atlanta, GA (Remote)",
       dates: "07/2024 – 11/2025",
       details: `
-        Designed and led implementation of Playwright Python-based automation for dynamic web applications and SaaS REST APIs, reducing regression execution time by 60%.
+        Designed and led implementation of Playwright Python-based automation for dynamic web applications, REST API services, and Oracle Database, reducing regression execution time by 60%.
         Developed a Java application to parse Splunk logs and connected it to the AI Agentic problems analysis for more easy debugging.
         Integrated automated suites into Azure DevOps pipelines; guided engineers in engineering-driven testing practices.
         Mapped requirements to test coverage using an integrated LLM analysis tool, identifying coverage gaps, edge cases, and risk areas.
         `,
       longWorkStory: ` 
-        At Southern Company, I was responsible for designing and implementing Python-based Playwright automation that became a core part of the regression strategy for Angular-based web applications and 
-        supporting REST APIs. I personally built and maintained reusable test components, including page objects, API clients, environment configurations, and custom waits. 
+        At Southern Company, I was responsible for designing and implementing Python-based Playwright automation that became a core part of the regression strategy for Angular-based web applications, 
+        supporting REST APIs for services, and Oracle Database data validation. I personally built and maintained reusable test components, including page objects, API clients, environment configurations, and custom waits. 
         I authored end-to-end and integration-level tests covering critical user workflows and backend validations. Also, I adopted a BDD approach for test case creation using Gherkin scripts, 
         mapped AUT code to the UI, and utilized AI-driven code change analysis to keep test cases updated immediately following application updates. 
         Furthermore, I integrated each test case into Azure DevOps pipelines, executing them automatically on every build and release candidate to catch issues as early as possible.
