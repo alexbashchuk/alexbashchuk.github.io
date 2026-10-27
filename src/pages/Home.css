@@ -336,7 +336,8 @@
 
 /* Automation Projects section title */
 section[aria-label="Automation Projects Examples"] h2 {
-  color: #4caf50;
+  color: #000;
+  background-color: #43db5c;
 }
 
 /* ===== Mobile layout fixes for Experience cards ===== */
