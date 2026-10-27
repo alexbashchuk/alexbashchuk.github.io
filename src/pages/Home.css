@@ -162,10 +162,10 @@
   border-radius: 6px;
   border: 1px solid #ccc;
 
-  background-color: #f5f5f5;
+  background-color: #43db5c;
   color: #000;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
   cursor: pointer;
 
   transition: background-color 0.2s ease;
