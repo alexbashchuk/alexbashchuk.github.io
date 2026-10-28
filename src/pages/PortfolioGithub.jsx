@@ -112,17 +112,6 @@ export default function PortfolioGithub() {
           Personal QA automation portfolio • React + Vite site • GitHub-hosted source code
         </p>
 
-        <div className="contactRow" aria-label="Project links">
-          <a className="certLink" href={repoUrl} target="_blank" rel="noreferrer">
-            Portfolio GitHub Repo
-          </a>
-          <span className="contactDot" aria-hidden="true">
-            •
-          </span>
-          <a className="certLink" href={githubPagesUrl} target="_blank" rel="noreferrer">
-            Live Portfolio Site
-          </a>
-        </div>
       </section>
 
       <section className="card" aria-label="Project Description">

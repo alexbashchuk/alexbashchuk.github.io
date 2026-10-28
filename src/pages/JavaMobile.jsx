@@ -42,19 +42,6 @@ export default function JavaMobile() {
           Android emulator bootstrap • Mobile app testing • Proxy-based traffic validation
         </p>
 
-        <div className="contactRow" aria-label="Project links">
-          <a className="certLink" href={githubUrl} target="_blank" rel="noreferrer">
-            GitHub Repo
-          </a>
-          <span className="contactDot" aria-hidden="true">•</span>
-          <a className="certLink" href={youtubeUrlForTests} target="_blank" rel="noreferrer">
-            Test Run Video
-          </a>
-          <span className="contactDot" aria-hidden="true">•</span>
-          <a className="certLink" href={youtubeUrlForReport} target="_blank" rel="noreferrer">
-            TestNG Report Analysis
-          </a>
-        </div>
       </section>
 
       <section className="card" aria-label="Project Description">

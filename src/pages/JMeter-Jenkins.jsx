@@ -121,20 +121,6 @@ export default function JMeterJenkins() {
           GitHub-triggered portfolio monitoring • Local Jenkins execution • JMeter API validation
         </p>
 
-        <div className="contactRow" aria-label="Project links">
-          <a className="certLink" href={githubUrl} target="_blank" rel="noreferrer">
-            JMeter GitHub Repo
-          </a>
-          <span className="contactDot" aria-hidden="true">
-            •
-          </span>
-          <span className="contactDot" aria-hidden="true">
-            •
-          </span>
-          <a className="certLink" href={youtubeUrl} target="_blank" rel="noreferrer">
-            Test Run Video (YouTube)
-          </a>
-        </div>
       </section>
 
       <section className="card" aria-label="Project Description">
