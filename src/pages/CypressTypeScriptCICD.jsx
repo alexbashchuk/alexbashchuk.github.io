@@ -188,6 +188,36 @@ alexbashchuk.github.io
         </p>
       </section>
 
+      <section className="card" aria-label="Demo Links">
+        <h2>Demo Links</h2>
+        <ul className="bullets">
+          <li>
+            Source code:{" "}
+            <a className="certLink" href={githubUrl} target="_blank" rel="noreferrer">
+              TypeScript-Cypress-CICD repository
+            </a>
+          </li>
+          <li>
+            Portfolio deployment repository:{" "}
+            <a className="certLink" href={portfolioRepoUrl} target="_blank" rel="noreferrer">
+              alexbashchuk.github.io
+            </a>
+          </li>
+          <li>
+            Local Cypress execution with Allure report:{" "}
+            <a className="certLink" href={youtubeLocalUrl} target="_blank" rel="noreferrer">
+              YouTube video
+            </a>
+          </li>
+          <li>
+            GitHub Actions execution with JUnit report:{" "}
+            <a className="certLink" href={youtubeGithubActionsUrl} target="_blank" rel="noreferrer">
+              YouTube video
+            </a>
+          </li>
+        </ul>
+      </section>
+
       <section className="card" aria-label="Tech Stack">
         <h2>Tech Stack</h2>
         <div className="chips" aria-label="Tech stack chips">
@@ -261,36 +291,6 @@ alexbashchuk.github.io
           <li>Supports CI execution with JUnit XML output for GitHub Actions visibility.</li>
           <li>Demonstrates cross-repository automation flow tied to portfolio deployment.</li>
           <li>Shows both local and CI execution in separate demo videos.</li>
-        </ul>
-      </section>
-
-      <section className="card" aria-label="Demo Links">
-        <h2>Demo Links</h2>
-        <ul className="bullets">
-          <li>
-            Source code:{" "}
-            <a className="certLink" href={githubUrl} target="_blank" rel="noreferrer">
-              TypeScript-Cypress-CICD repository
-            </a>
-          </li>
-          <li>
-            Portfolio deployment repository:{" "}
-            <a className="certLink" href={portfolioRepoUrl} target="_blank" rel="noreferrer">
-              alexbashchuk.github.io
-            </a>
-          </li>
-          <li>
-            Local Cypress execution with Allure report:{" "}
-            <a className="certLink" href={youtubeLocalUrl} target="_blank" rel="noreferrer">
-              YouTube video
-            </a>
-          </li>
-          <li>
-            GitHub Actions execution with JUnit report:{" "}
-            <a className="certLink" href={youtubeGithubActionsUrl} target="_blank" rel="noreferrer">
-              YouTube video
-            </a>
-          </li>
         </ul>
       </section>
 

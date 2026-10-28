@@ -143,6 +143,24 @@ export default function PortfolioGithub() {
         </p>
       </section>
 
+      <section className="card" aria-label="Demo Links">
+        <h2>Demo Links</h2>
+        <ul className="bullets">
+          <li>
+            Source code:{" "}
+            <a className="certLink" href={repoUrl} target="_blank" rel="noreferrer">
+              GitHub repository
+            </a>
+          </li>
+          <li>
+            Live website:{" "}
+            <a className="certLink" href={githubPagesUrl} target="_blank" rel="noreferrer">
+              GitHub Pages site
+            </a>
+          </li>
+        </ul>
+      </section>
+
       <section className="card" aria-label="Tech Stack">
         <h2>Tech Stack</h2>
         <div className="chips" aria-label="Tech stack chips">
@@ -211,24 +229,6 @@ export default function PortfolioGithub() {
           </li>
           <li>
             Keeps the code and presentation aligned so the site works both as a portfolio and as a code sample.
-          </li>
-        </ul>
-      </section>
-
-      <section className="card" aria-label="Demo Links">
-        <h2>Demo Links</h2>
-        <ul className="bullets">
-          <li>
-            Source code:{" "}
-            <a className="certLink" href={repoUrl} target="_blank" rel="noreferrer">
-              GitHub repository
-            </a>
-          </li>
-          <li>
-            Live website:{" "}
-            <a className="certLink" href={githubPagesUrl} target="_blank" rel="noreferrer">
-              GitHub Pages site
-            </a>
           </li>
         </ul>
       </section>

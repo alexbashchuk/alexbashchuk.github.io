@@ -201,6 +201,24 @@ export default function CSharpMobile() {
         </p>
       </section>
 
+      <section className="card" aria-label="Demo Links">
+        <h2>Demo Links</h2>
+        <ul className="bullets">
+          <li>
+            Test execution demo:{" "}
+            <a className="certLink" href={youtubeUrl} target="_blank" rel="noreferrer">
+              YouTube video
+            </a>
+          </li>
+          <li>
+            Source code:{" "}
+            <a className="certLink" href={githubUrl} target="_blank" rel="noreferrer">
+              GitHub repository
+            </a>
+          </li>
+        </ul>
+      </section>
+
       <section className="card" aria-label="Tech Stack">
         <h2>Tech Stack</h2>
         <div className="chips" aria-label="Tech stack chips">
@@ -253,24 +271,6 @@ export default function CSharpMobile() {
           <li>Appium server starts and becomes reachable on the resolved localhost port.</li>
           <li>AndroidDriver opens Chrome on the emulator and navigates to my portfolio site.</li>
           <li>Parameterized NUnit tests validate work-description controls across experience cards.</li>
-        </ul>
-      </section>
-
-      <section className="card" aria-label="Demo Links">
-        <h2>Demo Links</h2>
-        <ul className="bullets">
-          <li>
-            Test execution demo:{" "}
-            <a className="certLink" href={youtubeUrl} target="_blank" rel="noreferrer">
-              YouTube video
-            </a>
-          </li>
-          <li>
-            Source code:{" "}
-            <a className="certLink" href={githubUrl} target="_blank" rel="noreferrer">
-              GitHub repository
-            </a>
-          </li>
         </ul>
       </section>
 

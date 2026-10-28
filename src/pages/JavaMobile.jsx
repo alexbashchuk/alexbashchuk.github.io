@@ -67,30 +67,6 @@ export default function JavaMobile() {
         </p>
       </section>
 
-      <section className="card" aria-label="Tech Stack">
-        <h2>Tech Stack</h2>
-        <div className="chips" aria-label="Tech stack chips">
-          {techStack.map((it) => (
-            <span className="chip" key={it}>
-              {it}
-            </span>
-          ))}
-        </div>
-      </section>
-
-      <section className="card" aria-label="Framework Flow">
-        <h2>Framework Flow</h2>
-        <ul className="bullets">
-          <li>AVD emulator cleanup</li>
-          <li>Charles Proxy start</li>
-          <li>AVD Emulator start</li>
-          <li>Appium server start</li>
-          <li>Test execution and validation through Charles Proxy log parsing</li>
-          <li>Cleanup after test execution (AVD and Appium shutdown)</li>
-          <li>TestNG report creation</li>
-        </ul>
-      </section>
-
       <section className="card" aria-label="Demo Links">
         <h2>Demo Links</h2>
         <ul className="bullets">
@@ -118,6 +94,30 @@ export default function JavaMobile() {
               GitHub repository
             </a>
           </li>
+        </ul>
+      </section>
+
+      <section className="card" aria-label="Tech Stack">
+        <h2>Tech Stack</h2>
+        <div className="chips" aria-label="Tech stack chips">
+          {techStack.map((it) => (
+            <span className="chip" key={it}>
+              {it}
+            </span>
+          ))}
+        </div>
+      </section>
+
+      <section className="card" aria-label="Framework Flow">
+        <h2>Framework Flow</h2>
+        <ul className="bullets">
+          <li>AVD emulator cleanup</li>
+          <li>Charles Proxy start</li>
+          <li>AVD Emulator start</li>
+          <li>Appium server start</li>
+          <li>Test execution and validation through Charles Proxy log parsing</li>
+          <li>Cleanup after test execution (AVD and Appium shutdown)</li>
+          <li>TestNG report creation</li>
         </ul>
       </section>
 

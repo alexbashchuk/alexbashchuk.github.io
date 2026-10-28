@@ -158,6 +158,30 @@ export default function JMeterJenkins() {
         </p>
       </section>
 
+      <section className="card" aria-label="Demo Links">
+        <h2>Demo Links</h2>
+        <ul className="bullets">
+          <li>
+            Test execution demo:{" "}
+            <a className="certLink" href={youtubeUrl} target="_blank" rel="noreferrer">
+              YouTube video
+            </a>
+          </li>
+          <li>
+            JMeter source code:{" "}
+            <a className="certLink" href={githubUrl} target="_blank" rel="noreferrer">
+              GitHub repository
+            </a>
+          </li>
+          <li>
+            Portfolio source code:{" "}
+            <a className="certLink" href={portfolioRepoUrl} target="_blank" rel="noreferrer">
+              GitHub repository
+            </a>
+          </li>
+        </ul>
+      </section>
+
       <section className="card" aria-label="Tech Stack">
         <h2>Tech Stack</h2>
         <div className="chips" aria-label="Tech stack chips">
@@ -211,30 +235,6 @@ export default function JMeterJenkins() {
           <li>Jenkins runs JMeter locally in non-GUI mode against the configured endpoints.</li>
           <li>CSV and HTML reports are generated for result review.</li>
           <li>An e-mail notification with the execution results is sent after completion.</li>
-        </ul>
-      </section>
-
-      <section className="card" aria-label="Demo Links">
-        <h2>Demo Links</h2>
-        <ul className="bullets">
-          <li>
-            Test execution demo:{" "}
-            <a className="certLink" href={youtubeUrl} target="_blank" rel="noreferrer">
-              YouTube video
-            </a>
-          </li>
-          <li>
-            JMeter source code:{" "}
-            <a className="certLink" href={githubUrl} target="_blank" rel="noreferrer">
-              GitHub repository
-            </a>
-          </li>
-          <li>
-            Portfolio source code:{" "}
-            <a className="certLink" href={portfolioRepoUrl} target="_blank" rel="noreferrer">
-              GitHub repository
-            </a>
-          </li>
         </ul>
       </section>
 
