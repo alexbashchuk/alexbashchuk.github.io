@@ -152,9 +152,6 @@ alexbashchuk.github.io
           <span className="contactDot" aria-hidden="true">
             •
           </span>
-          <a className="certLink" href={portfolioRepoUrl} target="_blank" rel="noreferrer">
-            Portfolio Repo
-          </a>
           <span className="contactDot" aria-hidden="true">
             •
           </span>

@@ -128,9 +128,6 @@ export default function JMeterJenkins() {
           <span className="contactDot" aria-hidden="true">
             •
           </span>
-          <a className="certLink" href={portfolioRepoUrl} target="_blank" rel="noreferrer">
-            Portfolio GitHub Repo
-          </a>
           <span className="contactDot" aria-hidden="true">
             •
           </span>
