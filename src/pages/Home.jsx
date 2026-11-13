@@ -419,6 +419,14 @@ export default function Home() {
           </li>
           <li>
             <span className="expCompany">
+              UI + API + Database End-to-End Automation Project:
+            </span>{" "}
+            <Link className="certLink" to="/ui-api-db-test">
+              Playwright + TypeScript + Docker
+            </Link>
+          </li>
+          <li>
+            <span className="expCompany">
               WebUI and Picture Validation QA Automation Project:
             </span>{" "}
             <Link className="certLink" to="/java-playwright">
@@ -455,6 +463,14 @@ export default function Home() {
             </span>{" "}
             <Link className="certLink" to="/cypress-typescript-cicd">
               Cypress + TypeScript + Allure + GitHub Actions
+            </Link>
+          </li>
+          <li>
+            <span className="expCompany">
+              Python WebUI QA Automation Project:
+            </span>{" "}
+            <Link className="certLink" to="/python-pytest">
+              Python + pytest + Playwright
             </Link>
           </li>
         </ul>
