@@ -171,7 +171,7 @@ export default function Home() {
   const experience = [
     {
       company: "Williams Companies",
-      role: "QA Automation Architect (QA Consultant on contract)",
+      role: "QA Automation Architect / SDET",
       location: "Tulsa, OK (Remote)",
       dates: "12/2025 – Present",
       details: `
@@ -197,14 +197,15 @@ export default function Home() {
     },
     {
       company: "Southern Company",
-      role: "Senior QA Automation Analyst",
+      role: "Senior QA Automation Lead Analyst",
       location: "Atlanta, GA (Remote)",
       dates: "07/2024 – 11/2025",
       details: `
-        Designed and led implementation of Playwright Python-based automation for dynamic web applications, REST API services, and Oracle Database, reducing regression execution time by 60%.
-        Developed a Java application to parse Splunk logs and connected it to the AI Agentic problems analysis for more easy debugging.
+        Spearheaded the migration from a legacy low-code testing tool to a custom Python/Playwright automation framework integrated into Azure CI/CD, covering web UI, REST APIs, and SQL databases while reducing regression maintenance and execution time by 60%.
+        Developed a Java application to parse Splunk logs and connected it to the AI Agentic problems analysis for more easy debugging. Mapped requirements to test coverage using integrated LLM analysis tool to identify coverage gaps, edge cases, and risk areas
         Integrated automated suites into Azure DevOps pipelines; guided engineers in engineering-driven testing practices.
-        Mapped requirements to test coverage using an integrated LLM analysis tool, identifying coverage gaps, edge cases, and risk areas.
+        Led a team of four QA engineers, optimizing workload distribution to deliver consistent, on-time quality assurance.
+
         `,
       longWorkStory: ` 
         At Southern Company, I was responsible for designing and implementing Python-based Playwright automation that became a core part of the regression strategy for Angular-based web applications, 
@@ -212,6 +213,7 @@ export default function Home() {
         I authored end-to-end and integration-level tests covering critical user workflows and backend validations. Also, I adopted a BDD approach for test case creation using Gherkin scripts, 
         mapped AUT code to the UI, and utilized AI-driven code change analysis to keep test cases updated immediately following application updates. 
         Furthermore, I integrated each test case into Azure DevOps pipelines, executing them automatically on every build and release candidate to catch issues as early as possible.
+        During my work I governed work of assigned to my project four QA engineers, optimizing workload distribution to deliver consistent, on-time quality assurance.
       `
     },
     {
